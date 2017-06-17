@@ -10,6 +10,10 @@
 		CE3FC83B1EF3A0D9003D6A02 /* ALExtensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE3FC8311EF3A0D9003D6A02 /* ALExtensions.framework */; };
 		CE3FC8401EF3A0D9003D6A02 /* ALExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3FC83F1EF3A0D9003D6A02 /* ALExtensionsTests.swift */; };
 		CE3FC8421EF3A0D9003D6A02 /* ALExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = CE3FC8341EF3A0D9003D6A02 /* ALExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE3FC84C1EF505A9003D6A02 /* UITableView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3FC84B1EF505A9003D6A02 /* UITableView+Extensions.swift */; };
+		CE3FC8501EF5063D003D6A02 /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3FC84F1EF5063D003D6A02 /* Reusable.swift */; };
+		CE3FC8521EF506F4003D6A02 /* NibType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3FC8511EF506F4003D6A02 /* NibType.swift */; };
+		CE3FC8541EF50C94003D6A02 /* UICollectionView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3FC8531EF50C94003D6A02 /* UICollectionView+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +33,10 @@
 		CE3FC83A1EF3A0D9003D6A02 /* ALExtensionsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ALExtensionsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE3FC83F1EF3A0D9003D6A02 /* ALExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ALExtensionsTests.swift; sourceTree = "<group>"; };
 		CE3FC8411EF3A0D9003D6A02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE3FC84B1EF505A9003D6A02 /* UITableView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Extensions.swift"; sourceTree = "<group>"; };
+		CE3FC84F1EF5063D003D6A02 /* Reusable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
+		CE3FC8511EF506F4003D6A02 /* NibType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibType.swift; sourceTree = "<group>"; };
+		CE3FC8531EF50C94003D6A02 /* UICollectionView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +79,8 @@
 		CE3FC8331EF3A0D9003D6A02 /* ALExtensions */ = {
 			isa = PBXGroup;
 			children = (
+				CE3FC84E1EF50611003D6A02 /* Protocols */,
+				CE3FC84D1EF50604003D6A02 /* Extensions */,
 				CE3FC8341EF3A0D9003D6A02 /* ALExtensions.h */,
 				CE3FC8351EF3A0D9003D6A02 /* Info.plist */,
 			);
@@ -84,6 +94,24 @@
 				CE3FC8411EF3A0D9003D6A02 /* Info.plist */,
 			);
 			path = ALExtensionsTests;
+			sourceTree = "<group>";
+		};
+		CE3FC84D1EF50604003D6A02 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CE3FC84B1EF505A9003D6A02 /* UITableView+Extensions.swift */,
+				CE3FC8531EF50C94003D6A02 /* UICollectionView+Extensions.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		CE3FC84E1EF50611003D6A02 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				CE3FC84F1EF5063D003D6A02 /* Reusable.swift */,
+				CE3FC8511EF506F4003D6A02 /* NibType.swift */,
+			);
+			name = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,6 +177,7 @@
 					CE3FC8301EF3A0D9003D6A02 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = KMHHR9G5ZL;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					CE3FC8391EF3A0D9003D6A02 = {
@@ -198,6 +227,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE3FC8541EF50C94003D6A02 /* UICollectionView+Extensions.swift in Sources */,
+				CE3FC8521EF506F4003D6A02 /* NibType.swift in Sources */,
+				CE3FC8501EF5063D003D6A02 /* Reusable.swift in Sources */,
+				CE3FC84C1EF505A9003D6A02 /* UITableView+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,6 +357,7 @@
 		CE3FC8461EF3A0D9003D6A02 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = KMHHR9G5ZL;
@@ -336,6 +370,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.livenson.ALExtensions;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -343,6 +378,7 @@
 		CE3FC8471EF3A0D9003D6A02 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = KMHHR9G5ZL;
@@ -362,6 +398,7 @@
 		CE3FC8491EF3A0D9003D6A02 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = KMHHR9G5ZL;
 				INFOPLIST_FILE = ALExtensionsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -374,6 +411,7 @@
 		CE3FC84A1EF3A0D9003D6A02 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = KMHHR9G5ZL;
 				INFOPLIST_FILE = ALExtensionsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
