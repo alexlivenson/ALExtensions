@@ -15,6 +15,6 @@ To integrate Alamofire into your Xcode project using Carthage, specify it in you
 ```
 github "alexlivenson/ALExtensions" ~> 1.0
 ```
-Run carthage update to build the framework and drag the built Alamofire.framework into your Xcode project.
+Run carthage update to build the framework and drag the built ALExtensions.framework into your Xcode project.
 
 ## TODO: Add examples and setup with cocoapods
