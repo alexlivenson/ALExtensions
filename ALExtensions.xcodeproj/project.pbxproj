@@ -14,6 +14,8 @@
 		CE3FC8501EF5063D003D6A02 /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3FC84F1EF5063D003D6A02 /* Reusable.swift */; };
 		CE3FC8521EF506F4003D6A02 /* NibType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3FC8511EF506F4003D6A02 /* NibType.swift */; };
 		CE3FC8541EF50C94003D6A02 /* UICollectionView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3FC8531EF50C94003D6A02 /* UICollectionView+Extensions.swift */; };
+		CE9127DF208E8C650037E803 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9127DE208E8C650037E803 /* UIViewController+Extensions.swift */; };
+		CE9127E1208E8C990037E803 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9127E0208E8C990037E803 /* UIView+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +39,8 @@
 		CE3FC84F1EF5063D003D6A02 /* Reusable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
 		CE3FC8511EF506F4003D6A02 /* NibType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibType.swift; sourceTree = "<group>"; };
 		CE3FC8531EF50C94003D6A02 /* UICollectionView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extensions.swift"; sourceTree = "<group>"; };
+		CE9127DE208E8C650037E803 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		CE9127E0208E8C990037E803 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +105,8 @@
 			children = (
 				CE3FC84B1EF505A9003D6A02 /* UITableView+Extensions.swift */,
 				CE3FC8531EF50C94003D6A02 /* UICollectionView+Extensions.swift */,
+				CE9127DE208E8C650037E803 /* UIViewController+Extensions.swift */,
+				CE9127E0208E8C990037E803 /* UIView+Extensions.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -228,8 +234,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE9127E1208E8C990037E803 /* UIView+Extensions.swift in Sources */,
 				CE3FC8541EF50C94003D6A02 /* UICollectionView+Extensions.swift in Sources */,
 				CE3FC8521EF506F4003D6A02 /* NibType.swift in Sources */,
+				CE9127DF208E8C650037E803 /* UIViewController+Extensions.swift in Sources */,
 				CE3FC8501EF5063D003D6A02 /* Reusable.swift in Sources */,
 				CE3FC84C1EF505A9003D6A02 /* UITableView+Extensions.swift in Sources */,
 			);
